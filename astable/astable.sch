@@ -1,0 +1,229 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L VDC #PWR?
+U 1 1 5B2A3581
+P 5300 2650
+F 0 "#PWR?" H 5300 2550 50  0001 C CNN
+F 1 "VDC" H 5300 2900 50  0000 C CNN
+F 2 "" H 5300 2650 50  0001 C CNN
+F 3 "" H 5300 2650 50  0001 C CNN
+	1    5300 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B2A35A6
+P 5300 4550
+F 0 "#PWR?" H 5300 4300 50  0001 C CNN
+F 1 "GND" H 5300 4400 50  0000 C CNN
+F 2 "" H 5300 4550 50  0001 C CNN
+F 3 "" H 5300 4550 50  0001 C CNN
+	1    5300 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B2A3600
+P 4700 3000
+F 0 "R?" V 4780 3000 50  0000 C CNN
+F 1 "100" V 4700 3000 50  0000 C CNN
+F 2 "" V 4630 3000 50  0001 C CNN
+F 3 "" H 4700 3000 50  0001 C CNN
+	1    4700 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B2A3631
+P 5200 3000
+F 0 "R?" V 5280 3000 50  0000 C CNN
+F 1 "10k" V 5200 3000 50  0000 C CNN
+F 2 "" V 5130 3000 50  0001 C CNN
+F 3 "" H 5200 3000 50  0001 C CNN
+	1    5200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B2A366D
+P 5400 3000
+F 0 "R?" V 5480 3000 50  0000 C CNN
+F 1 "10k" V 5400 3000 50  0000 C CNN
+F 2 "" V 5330 3000 50  0001 C CNN
+F 3 "" H 5400 3000 50  0001 C CNN
+	1    5400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B2A36BC
+P 5950 3000
+F 0 "R?" V 6030 3000 50  0000 C CNN
+F 1 "100" V 5950 3000 50  0000 C CNN
+F 2 "" V 5880 3000 50  0001 C CNN
+F 3 "" H 5950 3000 50  0001 C CNN
+	1    5950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2750 5300 2650
+Wire Wire Line
+	4700 2750 4700 2850
+Wire Wire Line
+	5200 2850 5200 2750
+Connection ~ 5200 2750
+Wire Wire Line
+	5400 2750 5400 2850
+Connection ~ 5300 2750
+Wire Wire Line
+	5950 2750 5950 2850
+Connection ~ 5400 2750
+$Comp
+L C C?
+U 1 1 5B2A371A
+P 4950 3750
+F 0 "C?" H 4975 3850 50  0000 L CNN
+F 1 "100u" H 4975 3650 50  0000 L CNN
+F 2 "" H 4988 3600 50  0001 C CNN
+F 3 "" H 4950 3750 50  0001 C CNN
+	1    4950 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5B2A3791
+P 5700 3750
+F 0 "C?" H 5725 3850 50  0000 L CNN
+F 1 "100u" H 5725 3650 50  0000 L CNN
+F 2 "" H 5738 3600 50  0001 C CNN
+F 3 "" H 5700 3750 50  0001 C CNN
+	1    5700 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 3600 5950 4000
+Wire Wire Line
+	5950 3750 5850 3750
+Wire Wire Line
+	5400 3150 5400 3750
+Wire Wire Line
+	5350 3750 5550 3750
+Wire Wire Line
+	5200 3150 5200 3750
+Wire Wire Line
+	5100 3750 5250 3750
+Wire Wire Line
+	4800 3750 4700 3750
+Wire Wire Line
+	4700 3600 4700 4000
+Wire Wire Line
+	4700 2750 5950 2750
+$Comp
+L 2SC1815 Q?
+U 1 1 5B2A3892
+P 4800 4200
+F 0 "Q?" H 5000 4275 50  0000 L CNN
+F 1 "2SC1815" H 5000 4200 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 5000 4125 50  0001 L CIN
+F 3 "" H 4800 4200 50  0001 L CNN
+	1    4800 4200
+	-1   0    0    -1  
+$EndComp
+Connection ~ 4700 3750
+$Comp
+L 2SC1815 Q?
+U 1 1 5B2A39C6
+P 5850 4200
+F 0 "Q?" H 6050 4275 50  0000 L CNN
+F 1 "2SC1815" H 6050 4200 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 6050 4125 50  0001 L CIN
+F 3 "" H 5850 4200 50  0001 L CNN
+	1    5850 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3750 5000 4200
+Connection ~ 5400 3750
+Wire Wire Line
+	5250 3750 5650 4200
+Connection ~ 5200 3750
+Connection ~ 5950 3750
+Wire Wire Line
+	4700 4400 4700 4450
+Wire Wire Line
+	4700 4450 5950 4450
+Wire Wire Line
+	5950 4450 5950 4400
+Wire Wire Line
+	5300 4550 5300 4450
+Connection ~ 5300 4450
+$Comp
+L LED D?
+U 1 1 5B2A40BF
+P 4700 3450
+F 0 "D?" H 4700 3550 50  0000 C CNN
+F 1 "LED" H 4700 3350 50  0000 C CNN
+F 2 "" H 4700 3450 50  0001 C CNN
+F 3 "" H 4700 3450 50  0001 C CNN
+	1    4700 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D?
+U 1 1 5B2A41A7
+P 5950 3450
+F 0 "D?" H 5950 3550 50  0000 C CNN
+F 1 "LED" H 5950 3350 50  0000 C CNN
+F 2 "" H 5950 3450 50  0001 C CNN
+F 3 "" H 5950 3450 50  0001 C CNN
+	1    5950 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 3300 4700 3150
+Wire Wire Line
+	5950 3150 5950 3300
+$EndSCHEMATC
